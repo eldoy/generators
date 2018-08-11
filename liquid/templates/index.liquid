@@ -1,0 +1,20 @@
+<h1>__name__s{{ __name__ }}</h1>
+<p>
+  GET /__name__s/:id
+</p>
+
+{% assign __name__s = __name__s.all %}
+
+{% if __name__s != empty %}
+  <ul>
+  {% for __name__ in __name__s %}
+    <li>{{ __name__ }}</li>
+  {% endfor %}
+  </ul>
+{% else %}
+
+  <div class='nothing-found'>
+    Nothing found.
+  </div>
+
+{% endif %}

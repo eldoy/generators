@@ -1,0 +1,14 @@
+<h1>__name__{{ __name__ }}</h1>
+<p>
+  GET /__name__s/:id/delete
+</p>
+
+<form action="/__name__s/{{ __name__.id }}" method="POST">
+  <div class="form-field">
+    <label>
+      <input type="text" value="{{ __name__.id }}">
+    </label>
+  </div>
+  <button class='delete'>Delete</button>
+</form>
+
